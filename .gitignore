@@ -1,0 +1,30 @@
+#IntelliJ Files
+*.idea
+*.iml
+# Output Dir
+out/
+
+
+#Eclipse Files and Folders
+.project
+.settings/
+.classpath
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+target/
+
+#SVN Files
+.svn/
+
+# Java Compiled Files
+*.class
+
+# Log Files
+*.log
+
+# Package Files
+*.jar
+*.war
+*.ear
+/code/
