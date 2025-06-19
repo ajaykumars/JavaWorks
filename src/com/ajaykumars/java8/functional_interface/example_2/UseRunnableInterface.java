@@ -10,8 +10,24 @@ public class UseRunnableInterface {
 
     public static void main(String[] args) {
 
-        new Thread(() -> System.out.println("Thread-1")).run();
-        new Thread(() -> System.out.println("Thread-2")).run();
+        Thread t1 = new Thread(() -> {
+            int i = 0;
+            while (i < 20) {
+                System.out.println("Thread-1");
+                i++;
+            }
+        });
+        Thread t2 = new Thread(() -> {
+            int i = 0;
+            while (i < 20) {
+                System.out.println("Thread-2");
+                i++;
+            }
+        });
+
+        t1.start();
+        t2.start();
+
 
     }
 }

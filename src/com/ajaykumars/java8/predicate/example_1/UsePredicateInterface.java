@@ -23,19 +23,19 @@ public class UsePredicateInterface {
         Predicate<Person> predicateYounger = (person) -> person.age <= 30;
         Predicate<Person> predicateOlder = (person) -> person.age >= 60;
 
-        dispalyPerson(personList,predicateOlder);
-        dispalyPerson(personList,predicateYounger);
+        dispalyPerson(personList, predicateOlder);
+        dispalyPerson(personList, predicateYounger);
 
 
     }
 
-    private static void dispalyPerson(List<Person> personList, Predicate<Person> predicate){
+    private static void dispalyPerson(List<Person> personList, Predicate<Person> predicate) {
 
         personList.forEach(person -> {
             if (predicate.test(person)) {
                 System.out.println(person.toString());
-                }
-            });
+            }
+        });
 
     }
 

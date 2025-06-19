@@ -1,7 +1,6 @@
 package com.ajaykumars.java8.method_reference.example_1;
 
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,14 +21,14 @@ public class StaticMethodReference {
         personList.add(p3);
 
         System.out.println(">> >> Displaying all Persons : ");
-        personList.forEach(Person :: displayPerson );
+        personList.forEach(Person::displayPerson);
 
         System.out.println(">> >> Displaying Person of age > 35 : ");
-        personList.stream().filter(person -> person.getAge() > 35).forEach(Person :: displayPerson);
+        personList.stream().filter(person -> person.getAge() > 35).forEach(Person::displayPerson);
 
 
         System.out.println(">> >> Displaying Person of age >= 60 : ");
-        personList.stream().filter(Person :: checkSeniorCitizen).forEach(Person :: displayPerson);
+        personList.stream().filter(Person::checkSeniorCitizen).forEach(Person::displayPerson);
 
     }
 

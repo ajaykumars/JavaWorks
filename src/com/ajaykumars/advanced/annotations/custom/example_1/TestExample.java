@@ -4,15 +4,15 @@ package com.ajaykumars.advanced.annotations.custom.example_1;
 @TesterInfo(
         priority = TesterInfo.Priority.HIGH,
         createdBy = "mkyong.com",
-        tags = {"sales","test" }
+        tags = {"sales", "test"}
 )
 public class TestExample {
 
     @Test
     void testA() throws Exception {
         if (true)
-        //throw new RuntimeException("This test always failed");
-        throw  new Exception("assert failure");
+            //throw new RuntimeException("This test always failed");
+            throw new Exception("assert failure");
 
     }
 

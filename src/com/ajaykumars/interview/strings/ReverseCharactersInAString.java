@@ -9,15 +9,15 @@ public class ReverseCharactersInAString {
         char[] charArray = str.toCharArray();
         int beginIndex = 0;
         int last = 0;
-        for(int i=0; i<charArray.length; i++){
+        for (int i = 0; i < charArray.length; i++) {
 
-            if(charArray[i] == ' '){
-                reverse(charArray,beginIndex,i-1);
-                beginIndex = i+1;
+            if (charArray[i] == ' ') {
+                reverse(charArray, beginIndex, i - 1);
+                beginIndex = i + 1;
             }
         }
 
-        reverse(charArray,beginIndex,charArray.length-1);
+        reverse(charArray, beginIndex, charArray.length - 1);
 
 
         System.out.println(charArray);
@@ -25,10 +25,10 @@ public class ReverseCharactersInAString {
 
     }
 
-    public static void reverse(char[] charArray, int beginIndex, int endIndex){
+    public static void reverse(char[] charArray, int beginIndex, int endIndex) {
 
         char tempChar = ' ';
-        for(int i=beginIndex,j=endIndex; i!=j; i++,j--){
+        for (int i = beginIndex, j = endIndex; i != j; i++, j--) {
 
             tempChar = charArray[i];
             charArray[i] = charArray[j];

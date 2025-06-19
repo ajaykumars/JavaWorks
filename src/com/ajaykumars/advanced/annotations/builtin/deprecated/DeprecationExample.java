@@ -8,15 +8,15 @@ import com.ajaykumars.advanced.annotations.builtin.suppress_warnings.SuppressWar
 public class DeprecationExample {
 
     @SuppressWarnings({"deprecation"})
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         new SuppressWarningsExample().showDeprecatedMessage();
 
-   }
+    }
 
 
     @Deprecated
-    public void showDeprecatedMessage(){
+    public void showDeprecatedMessage() {
         System.out.println("This method is marked as deprecated");
     }
 

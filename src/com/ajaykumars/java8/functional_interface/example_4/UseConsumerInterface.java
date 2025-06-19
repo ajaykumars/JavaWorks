@@ -8,7 +8,7 @@ public class UseConsumerInterface {
 
     public static void main(String[] args) {
 
-        List<Integer> integerList = Arrays.asList(1,2,3,4,5);
+        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
 
         Consumer consumer = new Consumer<Integer>() {
             @Override
@@ -19,6 +19,6 @@ public class UseConsumerInterface {
 
         integerList.forEach(consumer);
 
-
+        integerList.forEach(i -> System.out.println("Number is : " + i));
     }
 }

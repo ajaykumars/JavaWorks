@@ -3,7 +3,7 @@ package com.ajaykumars.java8.default_methods.example_1;
 /**
  * Created by ajaykumars on 6/26/2017.
  */
-public class Person implements Lovable{
+public class Person implements Lovable {
 
     String name;
     int age;
@@ -29,4 +29,6 @@ public class Person implements Lovable{
 
         this.age = age;
     }
+
+
 }

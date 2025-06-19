@@ -38,20 +38,20 @@ public class Person {
         this.age = age;
     }
 
-    public static void displayPerson(Person person){
+    public static void displayPerson(Person person) {
 
-        System.out.println("Name : " + person.getName()+ " with age - " + person.getAge());
+        System.out.println("Name : " + person.getName() + " with age - " + person.getAge());
 
     }
 
-    public static boolean checkSeniorCitizen(Person person){
+    public static boolean checkSeniorCitizen(Person person) {
 
         return person.getAge() >= 60;
 
     }
 
 
-    public boolean checkSeniorCitizens(Person person){
+    public boolean checkSeniorCitizens(Person person) {
 
         return person.getAge() >= 60;
 

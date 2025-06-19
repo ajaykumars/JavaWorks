@@ -1,7 +1,5 @@
 package com.ajaykumars.advanced.threads.thread_example;
 
-import com.ajaykumars.advanced.threads.thread_example.SimpleThread;
-
 /**
  * Created by ajaykumars on 5/27/2017.
  */

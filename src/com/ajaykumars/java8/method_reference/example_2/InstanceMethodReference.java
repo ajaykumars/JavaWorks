@@ -22,7 +22,7 @@ public class InstanceMethodReference {
         personList.add(p3);
 
         System.out.println(">> >> Displaying Person of age >= 60 : ");
-        personList.stream().filter(p1 :: checkSeniorCitizens).forEach(Person :: displayPerson);
+        personList.stream().filter(p1::checkSeniorCitizens).forEach(Person::displayPerson);
 
     }
 }

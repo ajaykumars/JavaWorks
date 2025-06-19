@@ -5,7 +5,7 @@ package com.ajaykumars.spring.dependency_injection.example_1;
  */
 public class Writer {
 
-    public void drawShape(Shape shape){
+    public void drawShape(Shape shape) {
 
         shape.draw();
 

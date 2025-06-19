@@ -7,4 +7,5 @@ package com.ajaykumars.java8.functional_interface.example_1;
 public interface SimpleFunctionalInterface {
 
     public void doSomething();
+
 }

@@ -13,7 +13,7 @@ public class StringMethodRefresher {
         System.out.println(str.length());
 
         System.out.println(str.substring(8));
-        System.out.println(str.substring(8,11));
+        System.out.println(str.substring(8, 11));
 
 
         String str2 = "123";
@@ -22,18 +22,6 @@ public class StringMethodRefresher {
         System.out.println(String.valueOf(integer_input).getClass());
         System.out.println(Integer.valueOf(str2));
         //System.out.println(Integer.valueOf(str)); //NumberFormatException
-
-        
-
-
-
-
-
-
-
-
-
-
 
 
     }

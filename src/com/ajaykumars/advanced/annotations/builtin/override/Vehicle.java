@@ -5,11 +5,10 @@ package com.ajaykumars.advanced.annotations.builtin.override;
  */
 public class Vehicle {
 
-    public void start(){
+    public void start() {
 
         System.out.println("Vehicle is started");
     }
-
 
 
 }

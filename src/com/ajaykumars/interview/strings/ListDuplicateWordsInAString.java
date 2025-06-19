@@ -13,9 +13,15 @@ public class ListDuplicateWordsInAString {
 
         HashMap<String, Integer> wordCount = new HashMap<String, Integer>();
 
-        Arrays.asList(listOfWords).forEach(word -> {wordCount.put(word, (wordCount.containsKey(word))? wordCount.get(word)+1 : 1);});
+        Arrays.asList(listOfWords).forEach(word -> {
+            wordCount.put(word, (wordCount.containsKey(word)) ? wordCount.get(word) + 1 : 1);
+        });
 
-        wordCount.forEach((key, value) -> {if(value > 1){ System.out.println("[Key] : " + key + " [Value] : " + value);}});
+        wordCount.forEach((key, value) -> {
+            if (value > 1) {
+                System.out.println("[Key] : " + key + " [Value] : " + value);
+            }
+        });
 
 
     }

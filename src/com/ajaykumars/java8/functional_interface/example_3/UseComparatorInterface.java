@@ -20,11 +20,15 @@ public class UseComparatorInterface {
         stringList.add("cc");
 
         System.out.println("Sort with Ignore Case :");
-        stringList.sort((string1, string2) -> {return string1.compareToIgnoreCase(string2);});
+        stringList.sort((string1, string2) -> {
+            return string1.compareToIgnoreCase(string2);
+        });
 
         stringList.stream().forEach(System.out::println);
 
-        stringList.sort((string1, string2) -> {return string1.compareTo(string2);});
+        stringList.sort((string1, string2) -> {
+            return string1.compareTo(string2);
+        });
 
         System.out.println("Sort without Ignore Case :");
         stringList.stream().forEach(string -> System.out.println(string));

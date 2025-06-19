@@ -18,16 +18,16 @@ public class UseIntegerPredicate {
         displayNumbers(integerList, IntegerPredicate.getExactIntegerPredicate(4));
 
 
-
     }
 
-    public static void displayNumbers(List<Integer> integerList, Predicate<Integer> predicate){
+    public static void displayNumbers(List<Integer> integerList, Predicate<Integer> predicate) {
 
         integerList.forEach(integer -> {
             if (predicate.test(integer)) {
                 System.out.print(integer);
                 System.out.print(" ");
-            }});
+            }
+        });
 
         System.out.println();
 

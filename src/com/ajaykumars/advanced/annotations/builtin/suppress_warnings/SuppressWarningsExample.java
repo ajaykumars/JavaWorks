@@ -7,8 +7,8 @@ import java.util.ArrayList;
  */
 public class SuppressWarningsExample {
 
-    @SuppressWarnings({"deprecation","unchecked"})
-    public static void main(String args[]){
+    @SuppressWarnings({"deprecation", "unchecked"})
+    public static void main(String args[]) {
 
         new SuppressWarningsExample().showDeprecatedMessage();
 
@@ -21,7 +21,7 @@ public class SuppressWarningsExample {
 
 
     @Deprecated
-    public void showDeprecatedMessage(){
+    public void showDeprecatedMessage() {
         System.out.println("This method is marked as deprecated");
     }
 

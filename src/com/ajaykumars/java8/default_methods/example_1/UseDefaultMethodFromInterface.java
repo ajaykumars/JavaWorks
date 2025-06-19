@@ -27,7 +27,6 @@ public class UseDefaultMethodFromInterface {
         personList.forEach(p -> p.getInfo());
 
 
-
     }
 
 

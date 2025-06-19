@@ -27,8 +27,7 @@ public class UseStaticDefaultMethodFromInterface {
         personList.add(p1);
         personList.add(p2);
 
-        personList.forEach( person -> System.out.println(Lovable.getInfo(person)));
-
+        personList.forEach(person -> System.out.println(Lovable.getInfo(person)));
 
 
     }
